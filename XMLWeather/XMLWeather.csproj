@@ -99,6 +99,30 @@
   <ItemGroup>
     <None Include="Resources\Rain3.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rain.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\869218D8-1464-4FAA-92F7-CDA791C4FBA9_cx0_cy5_cw0_w1023_r1_s.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Draw_cloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e6d7fe7c9c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-rain-weather-cloud-clip-art-cloudy-5ac524b4ce46b3.7145695015228694288449.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-rain-cloud-storm-weather-clip-art-rain-5ab47b2dee2374.9241528315217774539754.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sunny-icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace XMLWeather
 {
@@ -19,19 +20,46 @@ namespace XMLWeather
 
         public void DisplayCurrent()
         {
-            cityOutput.Text = Form1.days[0].location;
-            tempLabel.Text = Form1.days[0].currentTemp;
-            minOutput.Text = Form1.days[0].tempLow;
-            maxOutput.Text = Form1.days[0].tempHigh;
+            //current
+            cityLabel.Text = Form1.days[0].location;
+            dateLabel.Text = Form1.days[0].date;
+            currenttempLabel.Text = Convert.ToDouble(Form1.days[0].currentTemp).ToString("0.") + "°C";
+            maxminLabel.Text = "MAX: " + Convert.ToDouble(Form1.days[0].tempHigh).ToString("0.") + "°C " + "MIN: " + Convert.ToDouble(Form1.days[0].tempLow).ToString("0.") + "°C";
+            outsideLabel.Text = Form1.days[0].condition;
+            
+
+            //forcast
+            day1Label.Text = Form1.days[1].date;
+            onedayLabel.Text = "MAX " + Convert.ToDouble(Form1.days[1].tempHigh).ToString("0.") + "°C " + "\n" + "MIN: " + Convert.ToDouble(Form1.days[1].tempLow).ToString("0.") + "°C";
+
+            if (Convert.ToDouble(Form1.days[1].condition) > 199 && Convert.ToDouble(Form1.days[1].condition) < 233 
+                || Convert.ToDouble(Form1.days[1].condition) > 299 && Convert.ToDouble(Form1.days[1].condition) < 322
+                || Convert.ToDouble(Form1.days[1].condition) > 499 && Convert.ToDouble(Form1.days[1].condition) < 532)
+            {
+                d1Pic.BackgroundImage = Properties.Resources.Rain;
+            }
+            else if (Convert.ToDouble(Form1.days[1].condition) > 599 && Convert.ToDouble(Form1.days[1].condition) < 623)
+            {
+                d1Pic.BackgroundImage = Properties.Resources.Snowing;
+            }
+            else if (Convert.ToDouble(Form1.days[1].condition) > 800 && Convert.ToDouble(Form1.days[1].condition) < 805)
+            {
+                d1Pic.BackgroundImage = Properties.Resources.Cloudy;
+            }
+            else if (Convert.ToDouble(Form1.days[1].condition) == 800)
+            {
+                d1Pic.BackgroundImage = Properties.Resources.Sunny;
+            }
+
+            day2Label.Text = Form1.days[2].date;
+            twodayLabel.Text = "MAX " + Convert.ToDouble(Form1.days[2].tempHigh).ToString("0.") + "°C " + "\n" + "MIN: " + Convert.ToDouble(Form1.days[2].tempLow).ToString("0.") + "°C";
+
+
+            day3Label.Text = Form1.days[3].date;
+            tdayLabel.Text = "MAX " + Convert.ToDouble(Form1.days[3].tempHigh).ToString("0.") + "°C " + "\n" + "MIN: " + Convert.ToDouble(Form1.days[3].tempLow).ToString("0.") + "°C";
+
+            Refresh();
         }
 
-        private void forecastLabel_Click(object sender, EventArgs e)
-        {
-            Form f = this.FindForm();
-            f.Controls.Remove(this);
-
-            ForecastScreen fs = new ForecastScreen();
-            f.Controls.Add(fs);
-        }
     }
 }

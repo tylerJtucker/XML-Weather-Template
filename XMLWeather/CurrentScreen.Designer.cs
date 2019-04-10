@@ -28,160 +28,262 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cityOutput = new System.Windows.Forms.Label();
-            this.maxOutput = new System.Windows.Forms.Label();
-            this.maxLabel = new System.Windows.Forms.Label();
-            this.minOutput = new System.Windows.Forms.Label();
-            this.minLabel = new System.Windows.Forms.Label();
-            this.currentOutput = new System.Windows.Forms.Label();
-            this.tempLabel = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.forecastLabel = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CurrentScreen));
+            this.dateLabel = new System.Windows.Forms.Label();
+            this.cityLabel = new System.Windows.Forms.Label();
+            this.currenttempLabel = new System.Windows.Forms.Label();
+            this.maxminLabel = new System.Windows.Forms.Label();
+            this.outsideLabel = new System.Windows.Forms.Label();
+            this.threedayLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.twodayLabel = new System.Windows.Forms.Label();
+            this.onedayLabel = new System.Windows.Forms.Label();
+            this.tdayLabel = new System.Windows.Forms.Label();
+            this.day1Label = new System.Windows.Forms.Label();
+            this.day3Label = new System.Windows.Forms.Label();
+            this.day2Label = new System.Windows.Forms.Label();
+            this.d1Pic = new System.Windows.Forms.PictureBox();
+            this.d3Pic = new System.Windows.Forms.PictureBox();
+            this.d2Pic = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d1Pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d3Pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d2Pic)).BeginInit();
             this.SuspendLayout();
             // 
-            // cityOutput
+            // dateLabel
             // 
-            this.cityOutput.BackColor = System.Drawing.Color.Transparent;
-            this.cityOutput.ForeColor = System.Drawing.Color.White;
-            this.cityOutput.Location = new System.Drawing.Point(32, 131);
-            this.cityOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.cityOutput.Name = "cityOutput";
-            this.cityOutput.Size = new System.Drawing.Size(106, 35);
-            this.cityOutput.TabIndex = 22;
-            this.cityOutput.Text = "City";
+            this.dateLabel.AutoSize = true;
+            this.dateLabel.BackColor = System.Drawing.Color.Transparent;
+            this.dateLabel.Font = new System.Drawing.Font("Stymie XBd BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.dateLabel.Location = new System.Drawing.Point(8, 33);
+            this.dateLabel.Name = "dateLabel";
+            this.dateLabel.Size = new System.Drawing.Size(73, 14);
+            this.dateLabel.TabIndex = 1;
+            this.dateLabel.Text = "2019-04-08";
             // 
-            // maxOutput
+            // cityLabel
             // 
-            this.maxOutput.BackColor = System.Drawing.Color.White;
-            this.maxOutput.Location = new System.Drawing.Point(176, 278);
-            this.maxOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.maxOutput.Name = "maxOutput";
-            this.maxOutput.Size = new System.Drawing.Size(170, 20);
-            this.maxOutput.TabIndex = 32;
+            this.cityLabel.AutoSize = true;
+            this.cityLabel.BackColor = System.Drawing.Color.Transparent;
+            this.cityLabel.Font = new System.Drawing.Font("Stymie XBd BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cityLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.cityLabel.Location = new System.Drawing.Point(6, 7);
+            this.cityLabel.Name = "cityLabel";
+            this.cityLabel.Size = new System.Drawing.Size(96, 25);
+            this.cityLabel.TabIndex = 2;
+            this.cityLabel.Text = "Stratford";
             // 
-            // maxLabel
+            // currenttempLabel
             // 
-            this.maxLabel.AutoSize = true;
-            this.maxLabel.ForeColor = System.Drawing.Color.White;
-            this.maxLabel.Location = new System.Drawing.Point(32, 278);
-            this.maxLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.maxLabel.Name = "maxLabel";
-            this.maxLabel.Size = new System.Drawing.Size(38, 20);
-            this.maxLabel.TabIndex = 31;
-            this.maxLabel.Text = "max";
+            this.currenttempLabel.AutoSize = true;
+            this.currenttempLabel.BackColor = System.Drawing.Color.Transparent;
+            this.currenttempLabel.Font = new System.Drawing.Font("Stymie XBd BT", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currenttempLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.currenttempLabel.Location = new System.Drawing.Point(-3, 55);
+            this.currenttempLabel.Name = "currenttempLabel";
+            this.currenttempLabel.Size = new System.Drawing.Size(264, 116);
+            this.currenttempLabel.TabIndex = 3;
+            this.currenttempLabel.Text = "20°C";
             // 
-            // minOutput
+            // maxminLabel
             // 
-            this.minOutput.BackColor = System.Drawing.Color.White;
-            this.minOutput.Location = new System.Drawing.Point(176, 243);
-            this.minOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.minOutput.Name = "minOutput";
-            this.minOutput.Size = new System.Drawing.Size(170, 20);
-            this.minOutput.TabIndex = 30;
+            this.maxminLabel.AutoSize = true;
+            this.maxminLabel.BackColor = System.Drawing.Color.Transparent;
+            this.maxminLabel.Font = new System.Drawing.Font("Stymie XBd BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maxminLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.maxminLabel.Location = new System.Drawing.Point(114, 183);
+            this.maxminLabel.Name = "maxminLabel";
+            this.maxminLabel.Size = new System.Drawing.Size(96, 16);
+            this.maxminLabel.TabIndex = 4;
+            this.maxminLabel.Text = "MAX:      MIN:";
             // 
-            // minLabel
+            // outsideLabel
             // 
-            this.minLabel.AutoSize = true;
-            this.minLabel.ForeColor = System.Drawing.Color.White;
-            this.minLabel.Location = new System.Drawing.Point(32, 243);
-            this.minLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.minLabel.Name = "minLabel";
-            this.minLabel.Size = new System.Drawing.Size(34, 20);
-            this.minLabel.TabIndex = 29;
-            this.minLabel.Text = "min";
+            this.outsideLabel.AutoSize = true;
+            this.outsideLabel.BackColor = System.Drawing.Color.Transparent;
+            this.outsideLabel.Font = new System.Drawing.Font("Stencil BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outsideLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.outsideLabel.Location = new System.Drawing.Point(115, 162);
+            this.outsideLabel.Name = "outsideLabel";
+            this.outsideLabel.Size = new System.Drawing.Size(125, 16);
+            this.outsideLabel.TabIndex = 5;
+            this.outsideLabel.Text = "Partly Cloudly";
             // 
-            // currentOutput
+            // threedayLabel
             // 
-            this.currentOutput.BackColor = System.Drawing.Color.Transparent;
-            this.currentOutput.ForeColor = System.Drawing.Color.White;
-            this.currentOutput.Location = new System.Drawing.Point(196, 209);
-            this.currentOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.currentOutput.Name = "currentOutput";
-            this.currentOutput.Size = new System.Drawing.Size(33, 20);
-            this.currentOutput.TabIndex = 28;
+            this.threedayLabel.AutoSize = true;
+            this.threedayLabel.BackColor = System.Drawing.Color.Transparent;
+            this.threedayLabel.Font = new System.Drawing.Font("Stymie XBd BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.threedayLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.threedayLabel.Location = new System.Drawing.Point(1, 235);
+            this.threedayLabel.Name = "threedayLabel";
+            this.threedayLabel.Size = new System.Drawing.Size(70, 25);
+            this.threedayLabel.TabIndex = 6;
+            this.threedayLabel.Text = "3 Day";
             // 
-            // tempLabel
+            // pictureBox1
             // 
-            this.tempLabel.AutoSize = true;
-            this.tempLabel.ForeColor = System.Drawing.Color.White;
-            this.tempLabel.Location = new System.Drawing.Point(32, 209);
-            this.tempLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.tempLabel.Name = "tempLabel";
-            this.tempLabel.Size = new System.Drawing.Size(157, 20);
-            this.tempLabel.TabIndex = 26;
-            this.tempLabel.Text = "Current Temperature";
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 263);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(250, 163);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
-            // label3
+            // twodayLabel
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(32, 22);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 43);
-            this.label3.TabIndex = 40;
-            this.label3.Text = "Today";
+            this.twodayLabel.AutoSize = true;
+            this.twodayLabel.BackColor = System.Drawing.Color.Transparent;
+            this.twodayLabel.Font = new System.Drawing.Font("Stymie XBd BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.twodayLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.twodayLabel.Location = new System.Drawing.Point(99, 372);
+            this.twodayLabel.Name = "twodayLabel";
+            this.twodayLabel.Size = new System.Drawing.Size(84, 14);
+            this.twodayLabel.TabIndex = 10;
+            this.twodayLabel.Text = "MAX:      MIN:";
             // 
-            // forecastLabel
+            // onedayLabel
             // 
-            this.forecastLabel.BackColor = System.Drawing.Color.Transparent;
-            this.forecastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forecastLabel.ForeColor = System.Drawing.Color.White;
-            this.forecastLabel.Location = new System.Drawing.Point(212, 22);
-            this.forecastLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.forecastLabel.Name = "forecastLabel";
-            this.forecastLabel.Size = new System.Drawing.Size(124, 43);
-            this.forecastLabel.TabIndex = 41;
-            this.forecastLabel.Text = "7 Day";
-            this.forecastLabel.Click += new System.EventHandler(this.forecastLabel_Click);
+            this.onedayLabel.AutoSize = true;
+            this.onedayLabel.BackColor = System.Drawing.Color.Transparent;
+            this.onedayLabel.Font = new System.Drawing.Font("Stymie XBd BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.onedayLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.onedayLabel.Location = new System.Drawing.Point(14, 371);
+            this.onedayLabel.Name = "onedayLabel";
+            this.onedayLabel.Size = new System.Drawing.Size(84, 14);
+            this.onedayLabel.TabIndex = 11;
+            this.onedayLabel.Text = "MAX:      MIN:";
             // 
-            // label5
+            // tdayLabel
             // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(29, 39);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(172, 41);
-            this.label5.TabIndex = 42;
-            this.label5.Text = "____________________________";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tdayLabel.AutoSize = true;
+            this.tdayLabel.BackColor = System.Drawing.Color.Transparent;
+            this.tdayLabel.Font = new System.Drawing.Font("Stymie XBd BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tdayLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.tdayLabel.Location = new System.Drawing.Point(179, 373);
+            this.tdayLabel.Name = "tdayLabel";
+            this.tdayLabel.Size = new System.Drawing.Size(84, 14);
+            this.tdayLabel.TabIndex = 12;
+            this.tdayLabel.Text = "MAX:      MIN:";
+            // 
+            // day1Label
+            // 
+            this.day1Label.AutoSize = true;
+            this.day1Label.BackColor = System.Drawing.Color.Transparent;
+            this.day1Label.Font = new System.Drawing.Font("Stymie XBd BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day1Label.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.day1Label.Location = new System.Drawing.Point(5, 272);
+            this.day1Label.Name = "day1Label";
+            this.day1Label.Size = new System.Drawing.Size(62, 14);
+            this.day1Label.TabIndex = 13;
+            this.day1Label.Text = "Day     1  ";
+            // 
+            // day3Label
+            // 
+            this.day3Label.AutoSize = true;
+            this.day3Label.BackColor = System.Drawing.Color.Transparent;
+            this.day3Label.Font = new System.Drawing.Font("Stymie XBd BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day3Label.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.day3Label.Location = new System.Drawing.Point(170, 272);
+            this.day3Label.Name = "day3Label";
+            this.day3Label.Size = new System.Drawing.Size(62, 14);
+            this.day3Label.TabIndex = 14;
+            this.day3Label.Text = "Day     3  ";
+            // 
+            // day2Label
+            // 
+            this.day2Label.AutoSize = true;
+            this.day2Label.BackColor = System.Drawing.Color.Transparent;
+            this.day2Label.Font = new System.Drawing.Font("Stymie XBd BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day2Label.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.day2Label.Location = new System.Drawing.Point(89, 272);
+            this.day2Label.Name = "day2Label";
+            this.day2Label.Size = new System.Drawing.Size(54, 14);
+            this.day2Label.TabIndex = 15;
+            this.day2Label.Text = "Day     2";
+            // 
+            // d1Pic
+            // 
+            this.d1Pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.d1Pic.Location = new System.Drawing.Point(16, 306);
+            this.d1Pic.Name = "d1Pic";
+            this.d1Pic.Size = new System.Drawing.Size(50, 50);
+            this.d1Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.d1Pic.TabIndex = 16;
+            this.d1Pic.TabStop = false;
+            // 
+            // d3Pic
+            // 
+            this.d3Pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.d3Pic.Location = new System.Drawing.Point(182, 306);
+            this.d3Pic.Name = "d3Pic";
+            this.d3Pic.Size = new System.Drawing.Size(50, 50);
+            this.d3Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.d3Pic.TabIndex = 17;
+            this.d3Pic.TabStop = false;
+            // 
+            // d2Pic
+            // 
+            this.d2Pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.d2Pic.Location = new System.Drawing.Point(102, 306);
+            this.d2Pic.Name = "d2Pic";
+            this.d2Pic.Size = new System.Drawing.Size(50, 50);
+            this.d2Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.d2Pic.TabIndex = 18;
+            this.d2Pic.TabStop = false;
             // 
             // CurrentScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.Controls.Add(this.forecastLabel);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.cityOutput);
-            this.Controls.Add(this.maxOutput);
-            this.Controls.Add(this.maxLabel);
-            this.Controls.Add(this.minOutput);
-            this.Controls.Add(this.minLabel);
-            this.Controls.Add(this.currentOutput);
-            this.Controls.Add(this.tempLabel);
-            this.Controls.Add(this.label5);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Controls.Add(this.d2Pic);
+            this.Controls.Add(this.d3Pic);
+            this.Controls.Add(this.d1Pic);
+            this.Controls.Add(this.day2Label);
+            this.Controls.Add(this.day3Label);
+            this.Controls.Add(this.day1Label);
+            this.Controls.Add(this.tdayLabel);
+            this.Controls.Add(this.onedayLabel);
+            this.Controls.Add(this.twodayLabel);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.threedayLabel);
+            this.Controls.Add(this.outsideLabel);
+            this.Controls.Add(this.maxminLabel);
+            this.Controls.Add(this.currenttempLabel);
+            this.Controls.Add(this.cityLabel);
+            this.Controls.Add(this.dateLabel);
             this.Name = "CurrentScreen";
-            this.Size = new System.Drawing.Size(375, 615);
+            this.Size = new System.Drawing.Size(250, 400);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d1Pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d3Pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d2Pic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label cityOutput;
-        private System.Windows.Forms.Label maxOutput;
-        private System.Windows.Forms.Label maxLabel;
-        private System.Windows.Forms.Label minOutput;
-        private System.Windows.Forms.Label minLabel;
-        private System.Windows.Forms.Label currentOutput;
-        private System.Windows.Forms.Label tempLabel;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label forecastLabel;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label dateLabel;
+        private System.Windows.Forms.Label cityLabel;
+        private System.Windows.Forms.Label currenttempLabel;
+        private System.Windows.Forms.Label maxminLabel;
+        private System.Windows.Forms.Label outsideLabel;
+        private System.Windows.Forms.Label threedayLabel;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label twodayLabel;
+        private System.Windows.Forms.Label onedayLabel;
+        private System.Windows.Forms.Label tdayLabel;
+        private System.Windows.Forms.Label day1Label;
+        private System.Windows.Forms.Label day3Label;
+        private System.Windows.Forms.Label day2Label;
+        private System.Windows.Forms.PictureBox d1Pic;
+        private System.Windows.Forms.PictureBox d3Pic;
+        private System.Windows.Forms.PictureBox d2Pic;
     }
 }
