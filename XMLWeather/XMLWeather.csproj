@@ -112,7 +112,7 @@
     <None Include="Resources\Draw_cloudy.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\e6d7fe7c9c.png" />
+    <None Include="Resources\Sunny-icon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\kisspng-computer-icons-rain-weather-cloud-clip-art-cloudy-5ac524b4ce46b3.7145695015228694288449.jpg" />
@@ -121,7 +121,25 @@
     <None Include="Resources\kisspng-rain-cloud-storm-weather-clip-art-rain-5ab47b2dee2374.9241528315217774539754.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sunny-icon.png" />
+    <None Include="Resources\e6d7fe7c9c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snowing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent_snow_gif_by_zhdara-d89z7ri.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumblr_o6s4mj9orQ1qzrglpo1_400.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1167068.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

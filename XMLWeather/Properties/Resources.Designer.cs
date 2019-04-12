@@ -63,9 +63,9 @@ namespace XMLWeather.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap brokenClouds {
+        internal static System.Drawing.Bitmap cloudGif {
             get {
-                object obj = ResourceManager.GetObject("brokenClouds", resourceCulture);
+                object obj = ResourceManager.GetObject("cloudGif", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace XMLWeather.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rain {
+        internal static System.Drawing.Bitmap rain {
             get {
-                object obj = ResourceManager.GetObject("Rain", resourceCulture);
+                object obj = ResourceManager.GetObject("rain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace XMLWeather.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rain3 {
+        internal static System.Drawing.Bitmap rainGif {
             get {
-                object obj = ResourceManager.GetObject("Rain3", resourceCulture);
+                object obj = ResourceManager.GetObject("rainGif", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,19 @@ namespace XMLWeather.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Snowing {
+        internal static System.Drawing.Bitmap snowGif {
             get {
-                object obj = ResourceManager.GetObject("Snowing", resourceCulture);
+                object obj = ResourceManager.GetObject("snowGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap snowing {
+            get {
+                object obj = ResourceManager.GetObject("snowing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

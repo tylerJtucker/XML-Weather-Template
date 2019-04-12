@@ -40,13 +40,13 @@ namespace XMLWeather
                 //fill day object with required data
                 reader.ReadToFollowing("time");
                 d.date = reader.GetAttribute("day");
-
+                reader.ReadToFollowing("symbol");
+                d.condition = reader.GetAttribute("number");
                 reader.ReadToFollowing("temperature");
                 d.tempLow = reader.GetAttribute("min");
                 d.tempHigh = reader.GetAttribute("max");
 
-                reader.ReadToFollowing("clouds");
-                d.condition = reader.GetAttribute("all");
+
 
                 //if day object not null add to the days list
                 if (d.date != null)
@@ -69,7 +69,7 @@ namespace XMLWeather
             days[0].tempLow = reader.GetAttribute("min");
             days[0].tempHigh = reader.GetAttribute("max");
             reader.ReadToFollowing("weather");
-            days[0].condition = reader.GetAttribute("value");
+            days[0].condition = reader.GetAttribute("number");
 
 
         }
